@@ -1,0 +1,7 @@
+all: main
+
+main:
+	g++ main.cpp mods/AES.cpp mods/DES.cpp mods/RC2.cpp mods/RC5.cpp mods/RC6.cpp mods/GOST.cpp mods/BLOW.cpp mods/TWO.cpp mods/SERP.cpp mods/CAM.cpp -lcrypto++
+
+clean:
+	rm a.out
